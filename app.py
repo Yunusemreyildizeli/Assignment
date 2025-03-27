@@ -1,1 +1,1 @@
-git status
+print("SmartBudgetTracker initialized successfully")
