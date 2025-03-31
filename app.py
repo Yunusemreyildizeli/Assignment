@@ -40,3 +40,6 @@ elif transaction_type_2 == "expense":
     user_balance -= amount_2
 
 print(f"Final balance after second transaction: ${user_balance:.2f}")
+
+# Initialize transaction list
+transactions = []
