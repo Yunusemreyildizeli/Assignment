@@ -25,3 +25,18 @@ elif transaction_type == "expense":
     user_balance -= amount
 
 print(f"Your updated balance is: ${user_balance:.2f}")
+
+# Simulate a second transaction input
+transaction_type_2 = input("Enter another transaction type (income/expense): ").strip().lower()
+amount_2 = float(input("Enter the second transaction amount: "))
+category_2 = input("Enter the second transaction category: ")
+
+print(f"Transaction recorded: {transaction_type_2} of ${amount_2:.2f} under '{category_2}' category.")
+
+# Update balance again
+if transaction_type_2 == "income":
+    user_balance += amount_2
+elif transaction_type_2 == "expense":
+    user_balance -= amount_2
+
+print(f"Final balance after second transaction: ${user_balance:.2f}")
