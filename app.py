@@ -43,3 +43,13 @@ print(f"Final balance after second transaction: ${user_balance:.2f}")
 
 # Initialize transaction list
 transactions = []
+
+# Start transaction input loop
+while True:
+    print("\nEnter a new transaction or type 'q' to quit.")
+    transaction_type = input("Transaction type (income/expense): ").strip().lower()
+    if transaction_type == "q":
+        break
+
+    amount = float(input("Transaction amount: "))
+    category = input("Transaction category: ")
