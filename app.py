@@ -17,3 +17,11 @@ amount = float(input("Enter transaction amount: "))
 category = input("Enter transaction category: ")
 
 print(f"Transaction recorded: {transaction_type} of ${amount:.2f} under '{category}' category.")
+
+# Update balance based on transaction type
+if transaction_type == "income":
+    user_balance += amount
+elif transaction_type == "expense":
+    user_balance -= amount
+
+print(f"Your updated balance is: ${user_balance:.2f}")
