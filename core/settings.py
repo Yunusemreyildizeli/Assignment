@@ -6,6 +6,7 @@ import os
 # Path to the settings CSV file used for storing budget limits by category
 SETTINGS_FILE = "data/settings.csv"
 
+
 def load_limits():
     """
     Loads category-wise spending limits from the settings CSV file.
@@ -26,3 +27,19 @@ def load_limits():
                     limits[row[0]] = float(row[1])
 
     return limits
+
+
+def save_limits(limits):
+    """
+    Saves the category-wise spending limits to the settings CSV file.
+
+    Args:
+        limits (dict): A dictionary where the key is the category name (str)
+                       and the value is the spending limit (float).
+    """
+    # Ensure the file is written using newline='' to prevent blank lines on Windows
+    with open(SETTINGS_FILE, mode='w', newline='') as f:
+        writer = csv.writer(f)
+        for category, limit in limits.items():
+            # Write each category and its limit as a separate row
+            writer.writerow([category, limit])
