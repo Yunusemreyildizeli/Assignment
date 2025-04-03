@@ -66,4 +66,43 @@ class BudgetApp:
                                                                                                          columnspan=2)
         Button(self.root, text="Save Transactions", command=self.save_transactions).grid(row=6, columnspan=2)
 
-        
+    def add_transaction(self):
+        """
+        Validates and adds a new transaction to the list.
+        Also checks for budget limit warnings and logs the action.
+        """
+        try:
+            # Read and convert input values
+            amount = float(self.amount_entry.get())
+            category = self.category_entry.get()
+            description = self.description_entry.get()
+            trans_type = self.type_var.get()
+
+            # Create a Transaction object and append to the list
+            tx = Transaction(trans_type, amount, category, description)
+            self.transactions.append(tx.to_dict())
+            self.logger.info(f"Transaction added: {tx.to_dict()}")
+
+            # Check if the category has a budget limit and trigger warning if exceeded
+            if trans_type=="expense" and category in self.limits:
+                spent = sum(t['amount'] for t in self.transactions if t['type']=="expense" and t['category']==category)
+                if spent > self.limits[category]:
+                    messagebox.showwarning("Limit Exceeded", f"Warning: Spending in '{category}' exceeded the limit!")
+
+            messagebox.showinfo("Success", "Transaction Added")
+
+        except Exception as e:
+            self.logger.error(f"Failed to add transaction: {e}")
+            messagebox.showerror("Error", f"Failed to add transaction: {e}")
+
+    def save_transactions(self):
+        """
+        Writes all transactions to the CSV file and confirms success to the user.
+        Logs the outcome of the operation.
+        """
+        try:
+            write_transactions("data/transactions.csv", self.transactions)
+            messagebox.showinfo("Saved", "Transactions saved successfully.")
+        except Exception as e:
+            self.logger.error(f"Save failed: {e}")
+            messagebox.showerror("Error", "Failed to save transactions.")
