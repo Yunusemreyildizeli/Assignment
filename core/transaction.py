@@ -30,3 +30,20 @@ class Transaction:
 
         # Use current timestamp if no date is provided
         self.date = date if date else datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+    
+    def to_dict(self):
+        """
+        Converts the transaction object to a dictionary format.
+        This is used for CSV serialization or data visualization.
+
+        Returns:
+            dict: Dictionary containing transaction details.
+        """
+        return {
+            'type': self.trans_type,
+            'amount': self.amount,
+            'category': self.category,
+            'description': self.description,
+            'date': self.date
+        }
+   
