@@ -28,3 +28,11 @@ class SortByAmount(SortStrategy):
     """
     def sort(self, transactions):
         return sorted(transactions, key=lambda x: x['amount'])
+
+
+class SortByDate(SortStrategy):
+    """
+    Concrete sorting strategy that sorts transactions by the 'date' field in ascending order.
+    """
+    def sort(self, transactions):
+        return sorted(transactions, key=lambda x: x['date'])
