@@ -28,3 +28,24 @@ def read_transactions(filepath):
                 transactions.append(row)
 
     return transactions
+
+
+def write_transactions(filepath, transactions):
+    """
+    Writes a list of transactions to a CSV file. Ensures the directory exists before writing.
+
+    Args:
+        filepath (str): Destination path for the CSV file.
+        transactions (list[dict]): List of transactions to be saved.
+    """
+    # Ensure that the directory exists before writing the file
+    os.makedirs(os.path.dirname(filepath), exist_ok=True)
+
+    # Open the file and write headers and transaction data
+    with open(filepath, 'w', newline='') as file:
+        fieldnames = ['type', 'amount', 'category', 'description', 'date']
+        writer = csv.DictWriter(file, fieldnames=fieldnames)
+
+        writer.writeheader()  # Write column headers
+        for tx in transactions:
+            writer.writerow(tx)  # Write each transaction row
