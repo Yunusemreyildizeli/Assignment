@@ -20,3 +20,11 @@ class SortStrategy:
             NotImplementedError: If the method is not implemented in a subclass.
         """
         raise NotImplementedError
+    
+
+class SortByAmount(SortStrategy):
+    """
+    Concrete sorting strategy that sorts transactions by the 'amount' field in ascending order.
+    """
+    def sort(self, transactions):
+        return sorted(transactions, key=lambda x: x['amount'])
