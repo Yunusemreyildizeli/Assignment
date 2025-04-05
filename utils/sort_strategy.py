@@ -36,3 +36,11 @@ class SortByDate(SortStrategy):
     """
     def sort(self, transactions):
         return sorted(transactions, key=lambda x: x['date'])
+    
+
+class SortByCategory(SortStrategy):
+    """
+    Concrete sorting strategy that sorts transactions alphabetically by the 'category' field.
+    """
+    def sort(self, transactions):
+        return sorted(transactions, key=lambda x: x['category'])
