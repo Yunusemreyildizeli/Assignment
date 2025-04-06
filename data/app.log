@@ -1,0 +1,18 @@
+2025-04-06 11:45:13,643 - INFO - Transaction added: {'type': 'income', 'amount': 1400000.0, 'category': 'Company Income', 'description': 'This is the full April collection', 'date': '2025-04-06 11:45:13'}
+2025-04-06 11:50:26,849 - INFO - Transaction added: {'type': 'expense', 'amount': 450000.0, 'category': 'Salaries', 'description': 'All employees covered', 'date': '2025-04-06 11:50:26'}
+2025-04-06 13:17:55,389 - INFO - Transaction added: {'type': 'expense', 'amount': 170000.0, 'category': 'Bills', 'description': 'All bills covered', 'date': '2025-04-06 13:17:55'}
+2025-04-06 14:24:16,957 - INFO - Transaction added: {'type': 'expense', 'amount': 60000.0, 'category': 'Internet Bill', 'description': 'All bills covered', 'date': '2025-04-06 14:24:16'}
+2025-04-06 14:25:20,947 - INFO - Transaction added: {'type': 'expense', 'amount': 300000.0, 'category': 'Company Expenses', 'description': 'Office supplies, marketing, etc.', 'date': '2025-04-06 14:25:20'}
+2025-04-06 15:27:21,390 - INFO - Transaction added: {'type': 'income', 'amount': 700000.0, 'category': 'Client Payment', 'description': 'Payment received from Client A', 'date': '2025-04-06 15:27:21'}
+2025-04-06 15:28:32,619 - INFO - Transaction added: {'type': 'income', 'amount': 800000.0, 'category': 'Investment', 'description': 'Angel investment for Q1 expansion', 'date': '2025-04-06 15:28:32'}
+2025-04-06 19:04:12,874 - INFO - Transaction added: {'type': 'expense', 'amount': 100000.0, 'category': 'Software Licenses', 'description': 'Annual subscription fees paid', 'date': '2025-04-06 19:04:12'}
+2025-04-06 19:05:17,836 - INFO - Transaction added: {'type': 'expense', 'amount': 25000.0, 'category': 'Snacks & Beverages', 'description': 'Office refreshments restocked', 'date': '2025-04-06 19:05:17'}
+2025-04-06 21:09:48,935 - INFO - Transaction added: {'type': 'income', 'amount': 250000.0, 'category': 'Service Revenue', 'description': 'Consulting fees from Client B', 'date': '2025-04-06 21:09:48'}
+2025-04-06 23:48:27,353 - INFO - Transaction added: {'type': 'expense', 'amount': 120000.0, 'category': 'Utilities', 'description': 'Electricity and water bill paid', 'date': '2025-04-06 23:48:27'}
+2025-04-06 23:50:08,478 - INFO - Transaction added: {'type': 'expense', 'amount': 48000.0, 'category': '48000', 'description': 'Delivery vans fuel and service', 'date': '2025-04-06 23:50:08'}
+2025-04-07 00:07:54,924 - INFO - Transaction added: {'type': 'income', 'amount': 500000.0, 'category': 'Online Sales', 'description': 'Sales from the web platform', 'date': '2025-04-07 00:07:54'}
+2025-04-07 00:08:48,922 - INFO - Transaction added: {'type': 'expense', 'amount': 220000.0, 'category': 'Marketing', 'description': 'Google Ads, Facebook campaigns', 'date': '2025-04-07 00:08:48'}
+2025-04-07 00:20:39,823 - INFO - Transaction added: {'type': 'expense', 'amount': 90000.0, 'category': 'Maintenance', 'description': 'Office equipment repair', 'date': '2025-04-07 00:20:39'}
+2025-04-07 00:22:38,940 - INFO - Transaction added: {'type': 'expense', 'amount': 65000.0, 'category': 'Insurance', 'description': 'Quarterly insurance premium', 'date': '2025-04-07 00:22:38'}
+2025-04-07 00:26:06,220 - INFO - Transaction added: {'type': 'income', 'amount': 300000.0, 'category': 'Subscription Income', 'description': 'Monthly SaaS subscribers', 'date': '2025-04-07 00:26:06'}
+2025-04-07 00:28:55,698 - INFO - Transaction added: {'type': 'expense', 'amount': 75000.0, 'category': 'Training', 'description': 'Workshop for sales team', 'date': '2025-04-07 00:28:55'}

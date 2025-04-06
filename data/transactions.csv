@@ -1,1 +1,19 @@
-amount,category,description,type
+type,amount,category,description,date
+income,1400000.0,Company Income,This is the full April collection,2025-04-06 11:45:13
+expense,450000.0,Salaries,All employees covered,2025-04-06 11:50:26
+expense,170000.0,Bills,All bills covered,2025-04-06 13:17:55
+expense,60000.0,Internet Bill,All bills covered,2025-04-06 14:24:16
+expense,300000.0,Company Expenses,"Office supplies, marketing, etc.",2025-04-06 14:25:20
+income,700000.0,Client Payment,Payment received from Client A,2025-04-06 15:27:21
+income,800000.0,Investment,Angel investment for Q1 expansion,2025-04-06 15:28:32
+expense,100000.0,Software Licenses,Annual subscription fees paid,2025-04-06 19:04:12
+expense,25000.0,Snacks & Beverages,Office refreshments restocked,2025-04-06 19:05:17
+income,250000.0,Service Revenue,Consulting fees from Client B,2025-04-06 21:09:48
+expense,120000.0,Utilities,Electricity and water bill paid,2025-04-06 23:48:27
+expense,48000.0,48000,Delivery vans fuel and service,2025-04-06 23:50:08
+income,500000.0,Online Sales,Sales from the web platform,2025-04-07 00:07:54
+expense,220000.0,Marketing,"Google Ads, Facebook campaigns",2025-04-07 00:08:48
+expense,90000.0,Maintenance,Office equipment repair,2025-04-07 00:20:39
+expense,65000.0,Insurance,Quarterly insurance premium,2025-04-07 00:22:38
+income,300000.0,Subscription Income,Monthly SaaS subscribers,2025-04-07 00:26:06
+expense,75000.0,Training,Workshop for sales team,2025-04-07 00:28:55
