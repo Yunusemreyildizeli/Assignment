@@ -92,3 +92,19 @@ def show_expense_chart(transactions):
     plt.grid(True)
     plt.xticks(rotation=45)
     plt.tight_layout()
+
+    # ---------------------- Chart 4: Income vs Leftover ----------------------
+    fig4 = plt.figure("4: Total Income vs Leftover", figsize=(6, 5))
+    bars = plt.bar(["Total Income", "Leftover"], [total_income, leftover], color=["blue", "purple"])
+
+    # Add value labels
+    for bar in bars:
+        height = bar.get_height()
+        plt.text(bar.get_x() + bar.get_width() / 2, height + 10000, f'{height:,.0f}', ha='center', fontsize=10)
+
+    plt.title("Total Income vs Leftover (Savings)")
+    plt.ylabel("Amount")
+    plt.tight_layout()
+
+    # Display all chart windows
+    plt.show()
